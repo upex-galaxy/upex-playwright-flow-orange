@@ -7,12 +7,10 @@ const test = driver.extend<{
 	loginPage: LoginPage
 	expect: Expect
 	addUserPage: AddSystemUserPage
-	// dashboard: DashboardPage
 }>({
-	expect: async ({}, use) => await use(test.expect),
+	expect: async ({}, use) => await use(driver.expect),
 	loginPage: async ({ page }, use) => await use(new LoginPage(page)),
 	addUserPage: async ({ page }, use) => await use(new AddSystemUserPage(page))
-	// dashboard: async ({page}, use) => await use(new DashboardPage(page))
 });
 
 export { test };
