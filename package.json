@@ -9,7 +9,7 @@
 		"test:trace": "npx playwright show-trace",
 		"test:debug": "npx playwright test --project=chromium --debug",
 		"test": "npx playwright test --project=chromium",
-		"ci:build": "bun run test tests/e2e/login.test.ts",
+		"ci:build": "bun run test tests/e2e/login.test.ts --workers=1",
 		"check:ts": "tsc --noEmit",
 		"prettier:check": "npx prettier --check tests/**/*.ts",
 		"prettier:fix": "npx prettier --write tests/**/*.ts",

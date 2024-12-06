@@ -47,4 +47,4 @@ jobs:
 
     - name: 🧪 Check Playwirght
       run: |
-        bun run test
+        bun run ci:build
