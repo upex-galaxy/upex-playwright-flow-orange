@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    ".eslintrc.json", // ESLint's config must be included
+    "**/*.ts" // TypeScript files
+  ],
+  "exclude": [
+    "node_modules" // Exclude the node_modules folder
+  ]
+}

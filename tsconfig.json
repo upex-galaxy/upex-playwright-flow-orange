@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "lib": ["ESNext", "dom"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "target": "ESNext",
+    "types": ["node"],
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["./tests/pages/*"],
+      "@helper/*": ["./tests/helper/*"],
+      "@data/*": ["./tests/data/*"],
+      "@type/*": ["./tests/type/*"],
+      "@api/*": ["./tests/api/*"],
+      "@TestBase": ["./tests/pages/TestBase.ts"],
+      "@playwrightConfig": ["./playwright.config.ts"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
