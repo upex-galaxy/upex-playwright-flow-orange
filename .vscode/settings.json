@@ -20,7 +20,8 @@
 		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
 	},
 	"[javascript]": {
-		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -52,7 +53,7 @@
 	"editor.defaultColorDecorators": true,
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
-	"editor.detectIndentation": false,
+	"editor.detectIndentation": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "explicit",
 		"source.fixAll.markdownlint": "explicit",
@@ -64,7 +65,7 @@
 		"strings": true
 	},
 	"editor.tabCompletion": "on",
-	"editor.wordWrap": "on",
+	"editor.wordWrap": "off",
 	"markdownlint.config": {
 		"default": true,
 		"MD029": false,
@@ -162,9 +163,9 @@
 		"**/.git/objects/**": true,
 		"**/node_modules/**": true,
 		"**/docs/**": true,
-		"**/test/data/**": true,
-		"**/test/downloads/**": true,
-		"**/test/screenshots/**": true,
+		"**/data/**": true,
+		"**/downloads/**": true,
+		"**/screenshots/**": true,
 		"**/allure-results/**": true,
 		"**/allure-report/**": true,
 		"**/reports/**": true
