@@ -26,6 +26,8 @@ jobs:
       name: ${{ github.event.inputs.environment }}
     env:
       TEST_ENV: ${{ github.event.inputs.environment }}
+      ORANGE_USERNAME: ${{ secrets.ORANGE_USERNAME }}
+      ORANGE_PASSWORD: ${{ secrets.ORANGE_PASSWORD }}
 
     steps:
     - name: 📘 Checkout Repo
