@@ -10,7 +10,9 @@ on:
     - QA
 
 env:
-  TEST_ENV: DEV
+  TEST_ENV: dev # default environment for PR checks
+  ORANGE_USERNAME: ${{ secrets.ORANGE_USERNAME }}
+  ORANGE_PASSWORD: ${{ secrets.ORANGE_PASSWORD }}
 
 jobs:
   BuildTest:

@@ -13,12 +13,12 @@ on:
         type: choice
         options:
         #? Orden de Deployments...
-        - DEV #? donde los developers work
-        - SANDBOX #? donde los QA realizan smoke y exploratory testing.
-        - QA #? donde los QA realizan smoke, sanity y regression testing.
-        - STAGING #? donde los QA realizan smoke, sanity o regression testing.
-        - UAT #? donde los beta testers realizan acceptance testing.
-        - PROD #? donde los usuarios finales usan la App.
+        - dev #? donde los developers work
+        - sandbox #? donde los qa realizan smoke y exploratory testing.
+        - qa #? donde los qa realizan smoke, sanity y regression testing.
+        - staging #? donde los qa realizan smoke, sanity o regression testing.
+        - uat #? donde los beta testers realizan acceptance testing.
+        - prod #? donde los usuarios finales usan la App.
 
 jobs:
   RegressionTesting:
