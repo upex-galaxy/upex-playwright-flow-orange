@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UPEX Galaxy's Allure Reports</title>
+        <link rel="icon" href="favicon.ico" />
+        <style>
+            :root {
+                --primary-color: #267ee2;
+                --secondary-color: #4623f5;
+                --background-color: #f0f4f8;
+                --text-color: #333;
+                --card-background: #2b7fee;
+            }
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                color: var(--text-color);
+                background-color: var(--background-color);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                flex: 1;
+            }
+
+            .container {
+                max-width: 1600px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+
+            header {
+                background-color: var(--primary-color);
+                color: white;
+                text-align: center;
+                padding: 2rem 0;
+                margin-bottom: 2rem;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                text-align: center;
+                color: var(--primary-color);
+            }
+
+            .subtitle {
+                font-size: 1.5rem;
+                margin-top: 0.5rem;
+            }
+
+            .description {
+                text-align: center;
+                max-width: 800px;
+                margin: 1rem auto 2rem;
+                color: #666;
+            }
+
+            .environment-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 2rem;
+                justify-items: center;
+                width: 100%;
+            }
+            .prod-env {
+                display: grid;
+                margin-top: 20px;
+                justify-items: center;
+                width: 100%;
+            }
+
+            .environment-card {
+                background-color: #cfe3ff;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem;
+                text-align: center;
+                transition: transform 0.3s ease;
+                width: 100%;
+                max-width: 150px;
+            }
+            .env-prod-card {
+                background-color: #cfe3ff;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem;
+                text-align: center;
+                transition: transform 0.3s ease;
+                width: 100%;
+                max-width: 150px;
+            }
+
+            .environment-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .environment-card h3 {
+                color: var(--primary-color);
+                margin-top: 0;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .env-prod-card h3 {
+                color: var(--primary-color);
+                margin-top: 0;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .report-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .report-list li {
+                margin-bottom: 0.5rem;
+            }
+
+            .report-list a {
+                color: var(--text-color);
+                text-decoration: none;
+                display: block;
+                padding: 0.5rem;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .report-list a:hover {
+                background-color: var(--secondary-color);
+                color: white;
+            }
+
+            footer {
+                text-align: center;
+                padding: 1em;
+                margin-top: 2rem;
+                padding: 1rem 0;
+                background-color: var(--primary-color);
+                color: white;
+            }
+
+            .allure-icon {
+                width: 50px;
+                height: 50px;
+                margin: 0 auto 1rem;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>🚀 Testing Automation Allure Reports</h1>
+            <p class="subtitle">📊 Lobby</p>
+        </header>
+
+        <main class="container">
+            <h2>🔍 Select the Allure Report you want to check</h2>
+            <p class="description">Navigate through your test results with ease. You can use the Pipeline Number in the URL to browse through past pipelines and track your testing progress over time.</p>
+            <h2>🔗 Environments</h2>
+
+            <div class="environment-grid">
+                <div class="environment-card">
+                    <img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" alt="Allure Report Icon" class="allure-icon" />
+                    <h3>🧪DEV</h3>
+                    <ul class="report-list">
+                        <li><a href="/upex-playwright-flow-orange/dev/integration">Integration</a></li>
+                        <li><a href="/upex-playwright-flow-orange/dev/sanity">Sanity</a></li>
+                        <li><a href="/upex-playwright-flow-orange/dev/smoke">Smoke</a></li>
+                        <li><a href="/upex-playwright-flow-orange/dev/regression">Regression</a></li>
+                    </ul>
+                </div>
+                <div class="environment-card">
+                    <img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" alt="Allure Report Icon" class="allure-icon" />
+                    <h3>🧪QA</h3>
+                    <ul class="report-list">
+                        <li><a href="/upex-playwright-flow-orange/qa/integration">Integration</a></li>
+                        <li><a href="/upex-playwright-flow-orange/qa/sanity">Sanity</a></li>
+                        <li><a href="/upex-playwright-flow-orange/qa/smoke">Smoke</a></li>
+                        <li><a href="/upex-playwright-flow-orange/qa/regression">Regression</a></li>
+                    </ul>
+                </div>
+                <div class="environment-card">
+                    <img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" alt="Allure Report Icon" class="allure-icon" />
+                    <h3>🧪UAT</h3>
+                    <ul class="report-list">
+                        <li><a href="/upex-playwright-flow-orange/uat/integration">Integration</a></li>
+                        <li><a href="/upex-playwright-flow-orange/uat/sanity">Sanity</a></li>
+                        <li><a href="/upex-playwright-flow-orange/uat/smoke">Smoke</a></li>
+                        <li><a href="/upex-playwright-flow-orange/uat/regression">Regression</a></li>
+                    </ul>
+                </div>
+                <div class="environment-card">
+                    <img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" alt="Allure Report Icon" class="allure-icon" />
+                    <h3>🧪STAGE</h3>
+                    <ul class="report-list">
+                        <li><a href="/upex-playwright-flow-orange/stage/integration">Integration</a></li>
+                        <li><a href="/upex-playwright-flow-orange/stage/sanity">Sanity</a></li>
+                        <li><a href="/upex-playwright-flow-orange/stage/smoke">Smoke</a></li>
+                        <li><a href="/upex-playwright-flow-orange/stage/regression">Regression</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="prod-env">
+                <div class="env-prod-card">
+                    <img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" alt="Allure Report Icon" class="allure-icon" />
+                    <h3>🧪PRODUCTION</h3>
+                    <ul class="report-list">
+                        <li><a href="/upex-playwright-flow-orange/prod/integration">Integration</a></li>
+                        <li><a href="/upex-playwright-flow-orange/prod/sanity">Sanity</a></li>
+                        <li><a href="/upex-playwright-flow-orange/prod/smoke">Smoke</a></li>
+                        <li><a href="/upex-playwright-flow-orange/prod/regression">Regression</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 UPEX Galaxy. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
