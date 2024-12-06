@@ -1,0 +1,1 @@
+[{"uid":"eec683031861b343","name":"GX3-5799: TC1: Should add user credentials for employee","time":{"start":1733521169184,"stop":1733521210130,"duration":40946},"status":"broken","severity":"normal"},{"uid":"4ed5742b17589b6e","name":"Login","time":{"start":1733521083377,"stop":1733521086305,"duration":2928},"status":"passed","severity":"normal"}]
