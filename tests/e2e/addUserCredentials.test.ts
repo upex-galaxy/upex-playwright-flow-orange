@@ -2,7 +2,6 @@ import { test } from '@TestBase';
 import { faker } from '@faker-js/faker';
 
 test.describe('GX3-5799: Admin | Agregar credenciales de usuario al empleado', () => {
-
 	test.beforeEach(async ({ loginPage, addUserPage }) => {
 		await loginPage.loginSuccess();
 		await addUserPage.gotoAdminTab();
@@ -13,11 +12,11 @@ test.describe('GX3-5799: Admin | Agregar credenciales de usuario al empleado', (
 		const expectedUsername = faker.internet.userName();
 		await addUserPage.fillAddUserFields({
 			userRole: 'Admin',
-			employeeName: 'Peter',
+			employeeName: 'a',
 			status: 'Enabled',
 			username: expectedUsername,
-			password: 'PeterCrack12345',
-			confirmPassword: 'PeterCrack12345'
+			password: 'HolaCrack12345',
+			confirmPassword: 'HolaCrack12345'
 		});
 		await page.waitForLoadState('domcontentloaded');
 		await expect(page).toHaveURL('index.php/admin/viewSystemUsers');
