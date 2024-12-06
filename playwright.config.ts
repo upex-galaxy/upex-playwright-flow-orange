@@ -31,8 +31,8 @@ export default defineConfig({
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
 	reporter: [
 		['./tests/custom-reporter.ts'],
-		['html', { outputFolder: 'test-html-report/main', open: 'never' }],
-		['junit', { outputFolder: 'test-junit-report', outputFile: 'test-junit-report/main-importer-report.xml' }],
+		['html', { outputFolder: 'test-html-report/chrome', open: 'never' }],
+		['junit', { outputFolder: 'test-junit-report', outputFile: 'test-junit-report/chrome-importer-report.xml' }],
 		['allure-playwright']
 	],
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
