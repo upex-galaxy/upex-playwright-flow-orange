@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","19587","GX3-5799: TC1: Should add user credentials for employee","chromium","Sun Dec 08 05:00:11 GMT 2024","passed","Sun Dec 08 05:00:30 GMT 2024","GX3-5799: Admin | Agregar credenciales de usuario al empleado","e2e/addUserCredentials.test.ts","",""
