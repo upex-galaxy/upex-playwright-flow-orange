@@ -35,7 +35,7 @@ export class SuperPage {
 	getCredentials() {
 		const username = this.username;
 		const password = this.password;
-		if(!username || !password) {
+		if (!username || !password) {
 			throw new Error('Missing CREDENTILAS in ENV VARS');
 		}
 		return { username, password };
@@ -62,9 +62,9 @@ export class SuperPage {
 	async selectDropdownInput(contextElement: Locator, searchingText: string) {
 		await this.autoinputDropdown(contextElement).fill(searchingText); // trigger dropdown
 		const dropdown = this.dropdown(contextElement);
-		await this.expect(dropdown).toBeVisible();
+		await expect(dropdown).toBeVisible();
+		await dropdown.getByText('Searching').waitFor({ state: 'detached' });
 		await this.dropdownOptions(contextElement).filter({ hasText: searchingText }).first().click(); // select option and close dropdown
 		await this.expect(dropdown).not.toBeVisible();
 	}
-
 }

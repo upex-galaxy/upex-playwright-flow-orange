@@ -18,8 +18,8 @@ test.describe('GX3-5799: Admin | Agregar credenciales de usuario al empleado', (
 			password: 'HolaCrack12345',
 			confirmPassword: 'HolaCrack12345'
 		});
+		await page.waitForURL('**/admin/viewSystemUsers', { timeout: 10000 });
 		await page.waitForLoadState('domcontentloaded');
-		await expect(page).toHaveURL('index.php/admin/viewSystemUsers');
 
 		const createdUserInTable = page.getByRole('table').getByText(expectedUsername);
 		await expect(createdUserInTable).toBeVisible();
