@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3440","Login","chromium","Thu Dec 26 20:01:39 GMT 2024","passed","Thu Dec 26 20:01:42 GMT 2024","","e2e/login.test.ts","",""
